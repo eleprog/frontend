@@ -1,0 +1,75 @@
+:root {
+  --background-color-0: #eeeff0;
+  --background-color-1: #dddfe0;
+  --background-color-2: #cdcfd1;
+  --background-color-3: #bcbfc1;
+  --background-color-4: #abafb2;
+
+
+
+  --primary-color-0: #3b444b; /* Основной цвет */
+  --primary-color-1: #464f55; /* Основной цвет */
+  --primary-color-2: #515960; /* Основной цвет */
+  --primary-color-3: #5d646a; /* Основной цвет */
+  --primary-color-4: #686f74; /* Основной цвет */
+
+  --text-color: #3b444b; /* Цвет текста */
+  --inv-text-color: #eeeff0; /* Цвет текста */
+
+
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--background-color-0); /* Светлый фон */
+  color: var(--text-color); /* Темный текст */
+  margin: 0; /* Убираем внешний отступ слева */
+  padding: 0; /* Убираем внутренний отступ слева */
+  height: 100vh; /* Высота вьюпорта */
+}
+
+.module-container {
+  display: flex;
+  height: 90vh; /* Высота контейнера на всю высоту экрана */
+  width: 100vw;
+  overflow: hidden; /* Скрываем все, что выходит за пределы родительского div */
+}
+
+table {
+  margin: 0px auto; /* Центрирование таблицы */
+  padding: 0px; /* Убираем внутренний отступ слева */
+  color: var(--text-color); /* Установите цвет текста на черный */
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid var(--primary-color-0);
+  padding: 4px;
+  text-align: left;
+}
+
+th {
+  background-color: var(--background-color-4);
+  text-align: center; /* Центрирование текста */
+  position: sticky;
+  top: -1px;
+}
+
+tr:nth-child(odd) {
+  background-color: var(--background-color-0); /* Цвет для нечетных строк */
+}
+tr:nth-child(even) {
+  background-color: var(--background-color-1); /* Цвет для четных строк */
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+ 
+/* Firefox */
+input[type=number] {
+  -moz-appearance:textfield;
+}
